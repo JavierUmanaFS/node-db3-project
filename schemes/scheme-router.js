@@ -1,8 +1,7 @@
 const express = require('express');
 
-const Schemes = require('./scheme-model.js');
-
 const router = express.Router();
+const Schemes = require('./scheme-model.js');
 
 router.get('/', (req, res) => {
   Schemes.find()
